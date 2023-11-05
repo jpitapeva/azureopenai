@@ -1,0 +1,17 @@
+```
+pool:
+  name: Azure Pipelines
+#Your build pipeline references a secret variable named ‘api-key-chatgpt4’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it secret. See https://go.microsoft.com/fwlink/?linkid=865972
+
+steps:
+- checkout: self
+  persistCredentials: true
+
+- task: mustaphalarhrouch.GPTPullRequestReview.GPTPullRequestReview.GPTPullRequestReview@0
+  displayName: 'GPTPullRequestReview '
+  inputs:
+    api_key: '$(api-key-chatgpt4)'
+    model: 'gpt-4'
+    aoi_endpoint: '$(api-endpoint-chatgpt4)'
+    support_self_signed_certificate: true
+```
