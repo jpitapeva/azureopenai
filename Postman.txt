@@ -1,10 +1,9 @@
 Testes com Postman
 
-Url: {{url-azure-openai-chatgpt4-endpoint}}/openai/deployments/gpt-4-32k/chat/completions?api-version=2023-03-15-preview&api-key={{api-key-chatgpt4}}
 Metodo: POST
+Url: {{url-azure-openai-chatgpt4-endpoint}}/openai/deployments/gpt-4-32k/chat/completions?api-version=2023-03-15-preview&api-key={{api-key-chatgpt4}}
 
-Body:
-
+Body(json):
 {
     "messages":[
         {
