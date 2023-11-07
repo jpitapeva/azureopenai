@@ -1,7 +1,7 @@
 Testes com Postman
 
 Metodo: POST
-Url: {{endpoint-azure-openai-chatgpt4}}/openai/deployments/{{nome-do-modelo-criado-no-portal}}/chat/completions?api-version=2023-03-15-preview&api-key={{api-key-chatgpt4}}
+Url: {{endpoint-azure-openai-chatgpt4}}/openai/deployments/{{nome-do-modelo-criado-no-portal-azure}}/chat/completions?api-version=2023-03-15-preview&api-key={{api-key-chatgpt4}}
 
 Body(json):
 {
