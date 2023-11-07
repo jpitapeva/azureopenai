@@ -1,0 +1,14 @@
+Testes com Postman
+
+Metodo: POST
+Url: {{endpoint-azure-openai-chatgpt4}}/openai/deployments/{{nome-do-modelo-criado-no-portal-azure}}/chat/completions?api-version=2023-03-15-preview&api-key={{api-key-chatgpt4}}
+
+Body(json):
+{
+    "messages":[
+        {
+        "role":"user",
+        "content":"quem é o atual ceo da microsoft"
+        }
+    ]
+}
